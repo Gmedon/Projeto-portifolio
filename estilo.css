@@ -1,0 +1,86 @@
+@keyframes sumir {
+    0% {width: 0px; height: 0px;}
+    100% {width: 60px; height: 60px;}
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "lado1 lado2"
+    ;
+    background-image: url(imagens/fundo.jpg);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    background-image: url(imagens/fundo.jpg);
+    grid-area: nav;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+h1 {
+    text-shadow: 2px 2px white;
+    cursor: pointer;
+}
+
+.home {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.sobre {
+    margin-left: 80px;
+}
+.sobre:hover {
+    font-size: 30px;
+}
+.hobbies:hover {
+    font-size: 30px;
+}
+.lado1 {
+    grid-area: lado1;
+    height: 617px;
+    width: 683px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+.baixo {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+    animation: sumir;
+    animation-duration: 0.5s;
+}
+.icon:hover {
+    width: 70px;
+    height: 70px;
+}
+.lado2 {
+    grid-area: lado2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 683px;
+}
+.eu {
+    height: 600px;
+}
+.nva {
+    color: blue;
+}

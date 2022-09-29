@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagens/fundo.jpg);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    background-image: url(imagens/fundo.jpg);
+    grid-area: nav;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+h1 {
+    text-shadow: 2px 2px white;
+    cursor: pointer;
+}
+.sobre {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.home {
+    margin-left: 40px;
+}
+.home:hover {
+    font-size: 30px;
+}
+.hobbies:hover {
+    font-size: 30px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aviso {
+    margin-left: 60px;
+    height: 700px;
+    width: 600px;
+}
